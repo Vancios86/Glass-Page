@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+}
+.glass {
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.6));
+    width: 60%;
+    min-height: 80vh;
+    border: 1px solid black;
+    justify-content: center;
+    position: absolute;
+    box-shadow: 20px 20px 20px 20px rgba(230, 157, 22, 0.3);
+    border-radius: 30px;
+    backdrop-filter: blur(0.2rem);
+    z-index: 3;
+} 
+img {
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+.circle {
+    background: linear-gradient(
+        to right bottom, rgba(221, 136, 66, 0.6), rgba(233, 99, 58, 0.6)
+        ); 
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    z-index: 2;
+    top: -10%;
+    right: 10%;
+}
+.avatar img {
+    width: 100px;
+    height: auto;
+    border-radius: 30%;
+}
