@@ -23,7 +23,7 @@ main {
     backdrop-filter: blur(0.2rem);
     z-index: 3;
 } 
-img {
+main img {
     height: 100vh;
     width: 100%;
     z-index: 1;
@@ -40,8 +40,23 @@ img {
     top: -10%;
     right: 10%;
 }
-.avatar img {
-    width: 100px;
-    height: auto;
-    border-radius: 30%;
+.avatar {
+    padding: 3%;
+    margin: 7%;
+    display: flex;
+    flex-direction: column;
+}
+.avatar p {
+    color: chocolate;
+}
+.links ul {
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.links ul:hover {
+    font-size: 1.1rem;
+    font-weight: bolder;
 }
